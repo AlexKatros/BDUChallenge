@@ -8,6 +8,7 @@ module.exports = (app) => {
 		res.sendFile('app.html', { root: __dirname + '/public/html' });
 	});
 
+	//Display shipment data
 	app.get('/shipments', async (req, res) => {
 		try {
 			const shipments = await Shipment.find();
@@ -18,6 +19,7 @@ module.exports = (app) => {
 		}
 	});
 
+	//Save shipping data to MongoDB
 	app.post('/', async (req, res) => {
 		const {
 			ship_date,
