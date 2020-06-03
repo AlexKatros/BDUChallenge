@@ -48,7 +48,7 @@ function getShipmentData() {
 
 				$.ajax({
 					type: 'POST',
-					url: 'http://localhost:3000',
+					url: 'https://katros-bdu-challenge.herokuapp.com',
 					data: JSON.stringify(obj),
 					contentType: 'application/json',
 					dataType: 'json',
