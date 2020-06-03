@@ -1,22 +1,21 @@
 {
-  "name": "developer-challenge-app",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "axios": "^0.19.2",
-    "body-parser": "^1.18.3",
-    "delivery-tracker": "^2.3.10",
-    "express": "^4.16.4",
-    "jquery": "^3.5.1",
-    "mongoose": "^5.4.0",
-    "morgan": "^1.9.1",
-    "request": "^2.88.0"
-  }
+	"name": "developer-challenge-app",
+	"version": "1.0.0",
+	"description": "",
+	"main": "server.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"start": "node server.js"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"axios": "^0.19.2",
+		"body-parser": "^1.18.3",
+		"express": "^4.16.4",
+		"jquery": "^3.5.1",
+		"mongoose": "^5.4.0",
+		"morgan": "^1.9.1",
+		"request": "^2.88.0"
+	}
 }
