@@ -37,6 +37,7 @@ module.exports = (app) => {
 		if (tracking_url) shipmentFields.tracking_url = tracking_url;
 
 		try {
+
 			let shipment = await Shipment.findOneAndUpdate(
 				{ tracking_number: req.body.tracking_number },
 				{ $set: shipmentFields },

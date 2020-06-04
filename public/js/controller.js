@@ -18,13 +18,14 @@ function ChallengeCtrl($http, $scope) {
 	});
 }
 
+// Custom date filter that removes entries older than 3 days
 function dateFilter() {
 	items = [];
 	return function (items) {
 		var result = [];
 		var today = new Date().getTime();
 
-		//currently throws a TypeError but still works
+
 		for (var i = 0; i < items.length; i++) {
 			var timeFound = new Date(items[i].created_at);
 			var dayDifference = (today - timeFound.getTime()) / (1000 * 3600 * 24);
